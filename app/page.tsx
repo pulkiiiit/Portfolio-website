@@ -1,6 +1,7 @@
 "use client";
 import GitHubCalendar from "react-github-calendar";
 import Image from "next/image";
+import { ArrowRight, Mail , Github, Linkedin, X, House, Code, Briefcase, Medal, MedalIcon } from "lucide-react";
 
 export default function Home() {
   return (
@@ -239,11 +240,86 @@ export default function Home() {
           <div></div>
         </section>
         <section id="contact" className="py-8 mb-16 px-4 md:px-6">
-          
+          <div className="mb-8 mt-16" style={{opacity:1 , transform:"none"}}>
+            <h2 className="text-2xl md:text-3xl font-bold text-white" style={{opacity:1}}> Get in touch </h2>
+          </div>
+          <p className="text-gray-400 mb-6 md:mb-8 text-sm md:text-base" style={{opacity:1 , transform:"none"}}>
+            Want to work together? Feel free to reach out for collaborations or just a friendly hello.
+          </p>
+          <div className="grid grid-cols-1 gap-4 md:gap-8" style={{opacity:1}}>
+            <div className="space-y-4 md:space-y-6">
+              <a href="mailto:pulkitshukla001@gmail.com" className="flex items-center  gap-6 text-gray-300 hover:text-white transition-colors group bg-white/5 p-3 md:p-4 rounded-lg border border-white/10 hover:border-white/20" style={{opacity:1 ,                  transform:"none"}}>
+                <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                <Mail/></div>
+                <div>
+                  <div className="font-medium text-sm md:text-base">Email</div>
+                  <span className="text-xs md:text-sm text-gray-400">pulkitshukla001@gmail.com</span>
+                </div>
+                <ArrowRight className="ml-auto"/>
+              </a>
+              <a href="https://github.com/pulkiiiit" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group bg-white/5 p-3 md:p-4 rounded-lg border border-white/10 hover:border-white/20" style={{opacity:1 , transform:"none"}}>
+              <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                <Github/></div>
+                <div>
+                  <div className="font-medium text-sm md:text-base">GitHub</div>
+                  <span className="text-xs md:text-sm text-gray-400">github.com/pulkiiiit</span>
+                </div>
+                <ArrowRight className="ml-auto"/>
+              </a>
+              <a href="https://www.linkedin.com/in/pulkit-shukla-207437308/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group bg-white/5 p-3 md:p-4 rounded-lg border border-white/10 hover:border-white/20" style={{opacity:1 , transform:"none"}}>
+              <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                <Linkedin/></div>
+                <div>
+                  <div className="font-medium text-sm md:text-base">LinkedIn</div>
+                  <span className="text-xs md:text-sm text-gray-400">linkedin.com/in/pulkit-shukla-207437308/</span>
+                </div>
+                <ArrowRight className="ml-auto"/>
+              </a>
+              <a href="https://x.com/pulkiiiit" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group bg-white/5 p-3 md:p-4 rounded-lg border border-white/10 hover:border-white/20" style={{opacity:1 , transform:"none"}}>
+              <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                <X/></div>
+                <div>
+                  <div className="font-medium text-sm md:text-base">X</div>
+                  <span className="text-xs md:text-sm text-gray-400">x.com/pulkiiiit</span>
+                </div>
+                <ArrowRight className="ml-auto"/>
+              </a>
+            </div>
+          </div>
         </section>
       </main> 
       {/*Navbar*/}
-      <div></div>
+      <div className="fixed bottom-4 left-0 right-0 z-50">
+        <div className="flex flex-col items-center justify-center" style={{opacity:1 , transform:"none"}}>
+          <div className="flex h-16 w-fit items-end justify-center gap-2 rounded-full px-4 pb-3 justify-center bg-black/80 backdrop-blur-md border border-white/20 rounded-full shadow-lg shadow-blue-500/10">
+          <div className="group relative flex h-10 w-10 origin-bottom items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:h-12 hover:w-12 hover:mb-2">
+            <a aria-label="Home" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9 size-12 rounded-full hover:bg-white/10 transition-all duration-300" href="#home">
+            <div>
+              <House/></div></a>
+          </div>
+          <div className="group relative flex h-10 w-10 origin-bottom items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:h-12 hover:w-12 hover:mb-2">
+            <a aria-label="Home" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9 size-12 rounded-full hover:bg-white/10 transition-all duration-300" href="#skills">
+            <div>
+              <Code/></div></a>
+          </div>
+          <div className="group relative flex h-10 w-10 origin-bottom items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:h-12 hover:w-12 hover:mb-2">
+            <a aria-label="Home" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9 size-12 rounded-full hover:bg-white/10 transition-all duration-300" href="#projects">
+            <div>
+              <Briefcase/></div></a>
+          </div>
+          <div className="group relative flex h-10 w-10 origin-bottom items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:h-12 hover:w-12 hover:mb-2">
+            <a aria-label="Home" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9 size-12 rounded-full hover:bg-white/10 transition-all duration-300" href="#experience">
+            <div>
+              <MedalIcon/></div></a>
+          </div>
+          <div className="group relative flex h-10 w-10 origin-bottom items-center justify-center rounded-full transition-all duration-300 ease-in-out hover:h-12 hover:w-12 hover:mb-2">
+            <a aria-label="Home" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 w-9 size-12 rounded-full hover:bg-white/10 transition-all duration-300" href="#contact">
+            <div>
+              <Mail/></div></a>
+          </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
