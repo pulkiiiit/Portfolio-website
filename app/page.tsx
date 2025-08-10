@@ -2,8 +2,23 @@
 import GitHubCalendar from "react-github-calendar";
 import Image from "next/image";
 import { ArrowRight, Mail , Github, Linkedin, X, House, Code, Briefcase, Medal, MedalIcon } from "lucide-react";
+import Lenis from "lenis";
+import { useEffect } from "react";
+
 
 export default function Home() {
+
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time: number): void {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
+
+
+
   return (
     <div className="bg-black text-white min-h-screen font-sans selection:bg-white/30 selection:text-white ">
       {/*main section*/}
@@ -85,7 +100,7 @@ export default function Home() {
                 <span className="px-2 md:px-3 py-1 bg-white/5 text-white border border-white/10 rounded-full text-xs hover:bg-white/10 transition-colors">TYPESCRIPT</span>
                 <span className="px-2 md:px-3 py-1 bg-white/5 text-white border border-white/10 rounded-full text-xs hover:bg-white/10 transition-colors">REACT</span>
                 <span className="px-2 md:px-3 py-1 bg-white/5 text-white border border-white/10 rounded-full text-xs hover:bg-white/10 transition-colors">NEXT/JS</span>
-                <span className="px-2 md:px-3 py-1 bg-white/5 text-white border border-white/10 rounded-full text-xs hover:bg-white/10 transition-colors">tAILWIND CSS</span>
+                <span className="px-2 md:px-3 py-1 bg-white/5 text-white border border-white/10 rounded-full text-xs hover:bg-white/10 transition-colors">TAILWIND CSS</span>
               </div>
             </div>
             <div className="space-y-2 md:space-y-3" style={{opacity:1 , transform: "none"}}>
@@ -323,3 +338,4 @@ export default function Home() {
     </div>
   );
 }
+
