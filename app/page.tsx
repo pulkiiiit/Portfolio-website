@@ -28,7 +28,6 @@ export default function Home() {
                   <a href="#">
                     <button
                       style={{
-                        // @ts-ignore
                         "--spread": "90deg",
                         "--shimmer-color": "#ffffff",
                         "--radius": "100px",
@@ -59,7 +58,7 @@ export default function Home() {
                 <div className="relative">
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-xl opacity-70 animate-pulse"></div>
                   <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-md opacity-70"></div>
-                  <div className="relative rounded-full overflow-hidden border-2 border-white/20 shadow-lg shadow-blue-500/10" style={{ transform: "none" }}><img src="/profile-pic.png" alt="This is my profile image" className="w-48 h-48 md:w-56 md:h-56 object-cover" /></div>
+                  <div className="relative rounded-full overflow-hidden border-2 border-white/20 shadow-lg shadow-blue-500/10" style={{ transform: "none" }}><Image src="/profile-pic.png" alt="This is my profile image" width={224}  height={224} className="w-48 h-48 md:w-56 md:h-56 object-cover" /></div>
                 </div>
               </div>
             </div>
@@ -153,16 +152,16 @@ export default function Home() {
           <div className="mb-8 mt-16" style={{opacity:1, transform:"none"}}>
             <h2 className="text-2xl md:text-3xl font-bold text-white">Check out some of my work</h2>
           </div>
-          <p className="text-gray-400 mb-8 text-sm md:text-base">I've built some projects. Take a look at some of my recent work.</p>
+          <p className="text-gray-400 mb-8 text-sm md:text-base">I&apos;ve built some projects. Take a look at some of my recent work.</p>
           {/* Project 1 */}
           <div className="space-y-12  md:space-y-16" style={{opacity:1}}>
             <div className="group" style={{opacity:1 , transform:"none"}}>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
                 <div className="md:col-span-5 aspect-video overflow-hidden rounded-lg bg-white/5 relative">
-                <img src="/frame-finder.png" alt="frame-finder preview" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" /></div>
+                <Image src="/frame-finder.png" alt="frame-finder preview" width={400}  height={600} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" /></div>
                 <div className="md:col-span-7 space-y-3 md:space-y-4">
                   <h3 className="text-lg md:text-xl font-bold text-white">Frame Finder</h3>
-                  <p className="text-gray-400 text-xs md:text-sm">FrameFinder, India’s first multi-vendor B2C eyewear ecommerce platform</p>
+                  <p className="text-gray-400 text-xs md:text-sm">FrameFinder, India&apos;s first multi-vendor B2C eyewear ecommerce platform</p>
                   <div className="flex flex-wrap gap-2">
                     <span className="text-xs px-2 py-1 rounded-full bg-white/5 text-gray-400">Nextjs</span>
                     <span className="text-xs px-2 py-1 rounded-full bg-white/5 text-gray-400">Tailwind CSS</span>
